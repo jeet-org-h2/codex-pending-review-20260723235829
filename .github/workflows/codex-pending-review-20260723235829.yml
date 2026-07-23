@@ -1,0 +1,9 @@
+name: Codex pending deployment fixture
+on:
+  workflow_dispatch:
+jobs:
+  gated:
+    runs-on: ubuntu-latest
+    environment: codex-pending-env-20260723235829
+    steps:
+      - run: echo 'disposable pending deployment fixture'
