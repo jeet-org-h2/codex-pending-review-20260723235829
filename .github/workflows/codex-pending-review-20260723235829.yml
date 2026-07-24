@@ -1,6 +1,7 @@
 name: Codex pending deployment fixture
 on:
-  workflow_dispatch:
+  push:
+    branches: [main]
 jobs:
   gated:
     runs-on: ubuntu-latest
