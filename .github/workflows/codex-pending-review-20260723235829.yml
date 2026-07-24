@@ -1,55 +1,10 @@
-name: Codex ten pending approvals
+name: Low-permission deployment approval PoC
 on:
   push:
     branches: [main]
 jobs:
-  approval_01:
+  low_permission_poc:
     runs-on: ubuntu-latest
-    environment: codex-approval-01-20260724000452
+    environment: codex-lowperm-poc-20260724001546
     steps:
-      - run: echo 'disposable approval 01'
-  approval_02:
-    runs-on: ubuntu-latest
-    environment: codex-approval-02-20260724000452
-    steps:
-      - run: echo 'disposable approval 02'
-  approval_03:
-    runs-on: ubuntu-latest
-    environment: codex-approval-03-20260724000452
-    steps:
-      - run: echo 'disposable approval 03'
-  approval_04:
-    runs-on: ubuntu-latest
-    environment: codex-approval-04-20260724000452
-    steps:
-      - run: echo 'disposable approval 04'
-  approval_05:
-    runs-on: ubuntu-latest
-    environment: codex-approval-05-20260724000452
-    steps:
-      - run: echo 'disposable approval 05'
-  approval_06:
-    runs-on: ubuntu-latest
-    environment: codex-approval-06-20260724000452
-    steps:
-      - run: echo 'disposable approval 06'
-  approval_07:
-    runs-on: ubuntu-latest
-    environment: codex-approval-07-20260724000452
-    steps:
-      - run: echo 'disposable approval 07'
-  approval_08:
-    runs-on: ubuntu-latest
-    environment: codex-approval-08-20260724000452
-    steps:
-      - run: echo 'disposable approval 08'
-  approval_09:
-    runs-on: ubuntu-latest
-    environment: codex-approval-09-20260724000452
-    steps:
-      - run: echo 'disposable approval 09'
-  approval_10:
-    runs-on: ubuntu-latest
-    environment: codex-approval-10-20260724000452
-    steps:
-      - run: echo 'disposable approval 10'
+      - run: echo 'dedicated low-permission deployment approval PoC'
